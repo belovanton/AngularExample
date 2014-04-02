@@ -1,0 +1,11 @@
+<div class="sections tsvyet" data-toggle="collapse" data-target="#{{id}}-collapse">
+	<span class="arrowopen"></span>
+	<span class="orange">{{title}}</span>
+</div>
+<ul class="collapse in btn-list-color" id="{{id}}-collapse">
+<!--<pre>{{items | json}}</pre>-->
+<li ng-repeat="item in items">
+  <button type="button" class="btn color {{item.class}}" ng-click="load(this)" data-toggle="button">
+    <span class="col_sample {{item.color}}"></span>
+  </button>
+</li>
